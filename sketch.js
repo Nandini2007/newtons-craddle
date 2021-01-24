@@ -28,10 +28,10 @@ function setup() {
 
 	 ground = new Ground(400,300,300,40)
 	 rope1 = new Rope(bob1.body,{x:ground.body.position.x, y:ground.body.position.y});
-	 rope2 = new Rope(bob2.body,{x:ground.body.position.x - 62 , y:ground.body.position.y});
-	 rope3 = new Rope(bob3.body,{x:ground.body.position.x - 124, y:ground.body.position.y});
-	 rope4 = new Rope(bob4.body,{x:ground.body.position.x + 62, y:ground.body.position.y});
-	 rope5 = new Rope(bob5.body,{x:ground.body.position.x +124, y:ground.body.position.y});
+	 rope2 = new Rope(bob2.body,{x:ground.body.position.x - 40 , y:ground.body.position.y});
+	 rope3 = new Rope(bob3.body,{x:ground.body.position.x - 80, y:ground.body.position.y});
+	 rope4 = new Rope(bob4.body,{x:ground.body.position.x + 40, y:ground.body.position.y});
+	 rope5 = new Rope(bob5.body,{x:ground.body.position.x +80, y:ground.body.position.y});
 
 
 //	rope1 = new Rope(bob1.body,bob2.body,40,0);
@@ -67,10 +67,10 @@ circle(mouseX,mouseY,4);
 
 function keyPressed(){
 	if(keyCode === LEFT_ARROW){
-		Matter.Body.applyForce(bob3.body,bob3.body.position,{x:-0.3,y :-0.05})
+		Matter.Body.applyForce(bob3.body,bob3.body.position,{x:-0.05,y :-0.00})
 	}
 	if(keyCode === RIGHT_ARROW){
-		Matter.Body.applyForce(bob5.body,bob5.body.position,{x:0.3,y :0.05})
+		Matter.Body.applyForce(bob5.body,bob5.body.position,{x:0.05,y :0.00})
 	}	
 }
 
